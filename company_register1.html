@@ -1,0 +1,387 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="style1.css">-->
+		<nav class="navbar" id="top-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Campus Recruitment System</a>
+				</div>	
+				<ul id="list1" class="nav navbar-nav">
+					<li class="active"><a href="index1.html">Home</a></li>
+				</ul>
+			</div>
+		</nav>
+ 	</head>
+	
+	<body>
+		
+		<div class=" container-fluid " id="dash" >
+			<h1>COMPANY REGISTRATION</h1>
+			<form action="company.php" method="POST" id="comapny_register_form" enctype="multipart/form-data">
+			    <div class="container">
+				   	<h2>Company Details</h2>
+				   	<hr>
+				   	<ol>
+					   	<li><h4><label for="name"><b>Name:</b></label></h4>
+					   	<input type="text" placeholder="Enter in capital letters" name="name" required></li>
+					   
+					   	<li><h4><label for="email"><b>Email(Username):</b></label></h4>
+					   	<input type="email" placeholder="abc@xyz.com" name="email" required></li>
+					   
+					   	<li><h4><label for="pwd"><b>Password:</b></label></h4>
+					   	<input type="password" name="pwd" placeholder="minimum 6 characters" required></li>
+
+					   	<li><h4><label for="phone"><b>Contact number:</b></label></h4>
+					   	<input type="number" placeholder="10 digits" name="phone" required ></li>
+
+					  	<li><h4><label for="location"><b>Location:</b></label></h4>
+					  	<input type="text" placeholder="Ex. Delhi" name="location" required ></li>
+
+					  	<li><h4><label for="ceo"><b>C.E.O.:</b></label></h4>
+					  	<input type="text" placeholder=" " name="ceo" required ></li>
+
+					  	<li><h4><label for="cto"><b>C.T.O.:</b></label></h4>
+					  	<input type="text" placeholder=" " name="cto" required ></li>
+
+					 	<li><h4><label for="hr"><b>HR:</b></label></h4>
+					  	<input type="text" placeholder=" " name="hr" required ></li>
+					  
+					  	<li><h4><label for="worth"><b>Net Worth:</b></label></h4>
+					   	<input type="number" placeholder="in crores" name="worth" required ></li>
+						  	
+					  	<li><h4><label for="found"><b>Founded on:</b></label></h4>
+					  	<input type="text" placeholder=" " name="found" required ></li>
+					  
+					  	<li><h4><label for="founder"><b>Founder:</b></label></h4>
+					  	<input type="text" placeholder=" " name="founder" required ></li>
+				  	</ol>
+				    <p>
+				    	<h4>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</h4>
+				    </p><br>
+				    <div class="btn">
+			          <a href="javascript: {}" onclick="document.getElementById('comapny_register_form').submit(); return false;"  type="submit">
+			            <span></span>
+			            <span></span>
+			            <span></span>
+			            <span></span>
+			            Register
+			          </a>
+			        </div>
+			  	</div>
+			</form>
+		</div>
+	</body>
+	<footer>
+		<nav class="navbar navbar-footer" id="bottom-nav">
+		<div class="container-fluid">
+				<div id="col1" >
+					<ul id="blist1">
+						<li><a href='#'>About Us</a></li>
+						<li><a href='#'>FAQs</a></li>
+						<li><a href='#'>Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div id="col2" >
+					<ul id="blist1">
+						<li><a href='#'>Privacy Policy</a></li>
+						<li><a href='#'>Legal</a></li>
+						<li><a href='#'>Work With Us</a></li>
+					</ul>
+				</div>
+				
+				<div id="col3" class=" container-fluid">
+					<ul id="blist3" >
+						<li><i class="fa fa-facebook fa-2x" ><a href='#'></a></i></li>
+						<li><i class="fa fa-twitter fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-instagram fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-linkedin fa-2x"><a href='#'></a></i></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</footer>
+	<style>
+            #top-nav{
+				opacity: 100%;	
+				font-weight: bold;
+				font-size-adjust: auto;
+				display: inline-block;
+	  			text-transform: uppercase;
+	  			text-decoration: none;
+	  			overflow: hidden;
+	  			transition: 0.8s;
+	  			width: 100%;
+	  			display:inline-grid;
+  				justify-content: space-between;
+  				align-items: center;
+  				padding: 30px 1-%;
+  				background: #101116;
+  				height: 50px;
+  				text-align: left;
+			}
+			#top-nav a{
+				color: white;
+				font-weight: bold;
+            	font-size: 15px;
+            	letter-spacing: 2px;
+			}
+			
+			#top-nav a:hover{
+				color: white;
+  				background: transparent;
+  				box-shadow: 0 0 10px #2196f3 , 0 0 40px #2196f3 , 0 0 80px #2196f3;
+  				transition-delay: 0.5s;
+			}
+
+			#bottom-nav{
+				opacity: 100%;	
+				font-weight: bold;
+				font-size-adjust: auto;
+				display: inline-block;
+	  			text-transform: uppercase;
+	  			text-decoration: none;
+	  			overflow: hidden;
+	  			transition: 0.8s;
+	  			width: 100%;
+	  			display:inline-grid;
+  				justify-content: space-between;
+  				align-items: center;
+  				padding: 30px 1-%;
+  				background: #101116;
+  				height: auto;
+			}
+            #bottom-nav a{
+            	color: white;
+            	font-weight: bold;
+            	font-size: auto;
+            	letter-spacing: 2px;
+            }
+            #col1{
+				/*background: red;*/
+				width :350px;
+				height: 100px;
+				float : left;
+				margin: 50px;
+				display: table-cell;
+			}
+
+			#col2{
+				/*background: green;*/
+				width :350px;
+				height: 100px;
+				float : left;
+				margin : 50px;
+				display: table-row;
+				color: black;
+				font-weight: bold;
+			}
+
+			#col3{
+				/*background: blue;*/
+				width :220px;
+				height: 100px;
+				float : left;
+				/*margin : 10px;*/
+				display: table-row;
+			}
+				
+			#blist1{
+				list-style-type:none;
+				margin-top: 15px;
+				color:white;
+			}
+
+			 #blist2 li{
+				display : inline;
+				size: 100px;
+				padding: 6px;
+				cursor : pointer;
+				color:white;
+				position: center;
+			}
+			#blist3 {
+				color:white;
+				size: 100px;
+				position: center;
+				padding-top: 100px;
+
+			}
+			#blist3 li {
+				list-style: none;
+				display: inline-flex;
+			}
+
+		  	a,p{
+		  		color: black;
+		  		font-weight: bold;
+		  		position: relative;
+  				display: inline-block;
+	  			text-transform: uppercase;
+	  			text-decoration: none;
+	  			overflow: hidden;
+		  	}
+
+		  	h4{
+		  		color: black;
+		  		font-weight: 300;
+		  	}
+
+			body {
+			  background-image: url('bg2.jpg'); 
+			  background-repeat: no-repeat; 
+			  background-size: cover;
+			  /*background-position: center;*/
+			  color: black;
+			  /*font-weight: bolder;*/
+			  font-family: Nova Square;
+			}
+			label{
+				color: black;
+			}
+			li{
+				letter-spacing: 4px;
+				opacity: 100%
+			}
+			h5{
+				color: black;
+			}
+			
+            h1{
+    			text-align: center;
+    			font-family: Nova Square;
+    			font-weight: bolder;
+			}
+
+            h2 {
+            	/*text-align: center;*/
+            	font-weight: bold;
+            	font-family: Nova Square;
+            }
+            #col-sm-4,  #col-sm-5, #col-sm-2, #col-sm-3 {
+                height: auto;
+                margin: 10px;
+                background: none;
+            }
+            #row {
+            	font-weight: bolder;
+            }
+            #col-sm-4,  #col-sm-5, #col-sm-2, #col-sm-3 table{
+            	border: none;
+            	justify-content: auto;
+            }
+            input{
+				background-color: white;
+				color: black;
+				letter-spacing: 4px;
+				width: 25%;
+			}
+			input[type=number] {
+				background-color: white;
+				color: black;
+				letter-spacing: 4px;
+			}
+			select, option{
+				background-color: white;
+				color: black;
+				letter-spacing: 4px;
+			}
+			hr{
+				border-color: black;
+			}
+
+
+            /*---------------------------------------------*/
+            .btn{
+			  /*position: relative;*/
+			  margin: 0;
+			  margin-bottom: 10px;
+			  padding: 0;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  min-height: 10px;
+			  background: #333;
+			  font-family: monospace;
+			  width:300px;
+			}
+			.btn a{
+			  position: relative;
+			  display: inline-block;
+			  padding: 15px 30px;
+			  color: #2196f3;
+			  text-transform: uppercase;
+			  letter-spacing: 4px;
+			  text-decoration: none;
+			  font-size: 24px;
+			  overflow: hidden;
+			  transition: 0.2s;
+			}
+			.btn a:hover{
+			  color: #255684;
+			  background: #2196f3;
+			  box-shadow: 0 0 10px #2196f3 , 0 0 40px #2196f3 , 0 0 80px #2196f3;
+			  transition-delay: 0.5s;
+			}
+			.btn a span{
+			  position: absolute;
+			  display: block;
+			}
+			.btn a span:nth-child(1){
+			  top:0;
+			  left:-100%;
+			  width: 100%;
+			  height:2px;
+			  background: linear-gradient(90deg,transparent,#2196f3);
+			}
+			.btn a:hover span:nth-child(1){
+			  left:100%;
+			  transition: 0.5s;
+			}
+			.btn a span:nth-child(2){
+			  top:-100%;
+			  right:0%;
+			  height: 100%;
+			  width:2px;
+			  background: linear-gradient(180deg,transparent,#2196f3);
+			}
+			.btn a:hover span:nth-child(2){
+			  top:100%;
+			  transition: 0.5s;
+			  transition-delay: 0.125s;
+			}
+			.btn a span:nth-child(3){
+			  bottom: 0;
+			  right:-100%;
+			  width: 100%;
+			  height:2px;
+			  background: linear-gradient(270deg,transparent,#2196f3);
+			}
+			.btn a:hover span:nth-child(3){
+			  right:100%;
+			  transition: 0.5s;
+			  transition-delay: 0.25s;
+			}
+			.btn a span:nth-child(4){
+			  bottom:-100%;
+			  left:0%;
+			  height: 100%;
+			  width:2px;
+			  background: linear-gradient(360deg,transparent,#2196f3);
+			}
+			.btn a:hover span:nth-child(4){
+			  bottom:100%;
+			  transition: 0.5s;
+			  transition-delay: 0.325s;
+			}
+			table,th, td, tr {
+				border-style: all;
+				border-color: black;
+				border-width: 2px;
+			}
+        </style>
+</html>

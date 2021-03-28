@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <title>Company Dash</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <style>
+            #top-nav{
+				background : none;
+				opacity: 100%;	
+				font-weight: bold;
+				font-size-adjust: auto;
+				position: relative;
+  				display: inline-block;
+	  			color: #2196f3;
+	  			text-transform: uppercase;
+	  			letter-spacing: 4px;
+	  			text-decoration: none;
+	  			font-size: 24px;
+	  			overflow: hidden;
+	  			transition: 0.2s;
+			}
+            .active:hover {
+				color: #255684;
+  				/*background: #2196f3;*/
+  				/*box-shadow: 0 0 10px #2196f3 , 0 0 40px #2196f3 , 0 0 80px #2196f3;*/
+  				transition-delay: 0.5s;
+			}
+
+			nav:hover{
+				transition-duration: infinite;
+				box-shadow: 0 0 10px magenta , 0 0 40px red , 0 0 80px magenta;	
+			}
+
+			#bottom-nav{
+				background : none;
+				/*bottom: 0;*/
+				/*position: fixed;*/
+				opacity: 80%;
+				overflow: hidden;
+				width: 100%;
+				font-weight: bolder;
+				color: black;
+				
+			}
+            
+            #col2{
+				/*background: red;*/
+				width :350px;
+				height: 100px;
+				float : left;
+				margin: 50px;
+				display: table-cell;
+			}
+
+			#col3{
+				/*background: green;*/
+				width :350px;
+				height: 100px;
+				float : left;
+				margin : 50px;
+				display: table-cell;
+				color: black;
+				font-weight: bold;
+			}
+
+			#col4{
+				/*background: blue;*/
+				width :220px;
+				height: 100px;
+				float : left;
+				/*margin : 10px;*/
+				display: table-cell;
+			}
+				
+			#blist1{
+				list-style-type:none;
+				margin-top: 15px;
+				color:white;
+			}
+
+			 #blist2 li{
+				display : inline;
+				size: 100px;
+				padding: 6px;
+				cursor : pointer;
+				color:white;
+				position: center;
+			}
+			#blist3 {
+				color:white;
+				size: 100px;
+				position: center;
+				padding-top: 100px;
+			}
+		  	a{
+		  		color: black;
+		  		font-weight: bold;
+		  		position: relative;
+  				display: inline-block;
+	  			/*color: #2196f3;*/
+	  			text-transform: uppercase;
+	  			/*letter-spacing: 4px;*/
+	  			text-decoration: none;
+	  			/*font-size: 24px;*/
+	  			overflow: hidden;
+	  			/*transition: 0.2s*/
+		  	}
+
+		  	a:hover:after{
+		  		background-color: none;
+		  		box-shadow: 0 0 10px magenta , 0 0 40px red , 0 0 80px magenta;
+		  	}
+		  	h4{
+		  		color: black;
+		  		font-weight: 300;
+		  	}
+
+			.wrapper
+			{
+				transform: translate(-50%, -50%);
+			}
+
+			.button{
+				display: block;
+				width: 200px;
+				height: 40px;
+				line-height: 40px;
+				font-size: 18px;
+				font-family: sans-serif;
+				text-decoration: none;
+				color: white;
+				border: 2px solid white;
+				letter-spacing: 2px;
+				text-align: center;
+				position: relative;
+			}
+
+			span{
+				position: relative;
+			  	z-index: 2;
+
+			}
+
+			.button:after{
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				width: 0;
+				height: 100%;
+				background: #0080ff;
+				background-color: black;
+				/*transition: all .35s;*/
+				box-shadow: 0 0 10px magenta , 0 0 40px red , 0 0 80px magenta;
+	  			/*transition-delay: 0.5s;*/
+			}
+
+			.button:hover{
+				color: #fff;
+				/*box-shadow: 0 0 10px magenta , 0 0 40px red , 0 0 80px magenta;*/
+			}
+
+			.button:hover:after{
+				width: 100%;
+				position: relative;
+  				display: inline-block;
+	  			/*color: #2196f3;*/
+	  			text-transform: uppercase;
+	  			/*letter-spacing: 4px;*/
+	  			text-decoration: none;
+	  			/*font-size: 24px;*/
+	  			overflow: hidden;
+	  			/*transition: 0.2s*/
+			}
+
+			.container {
+				position: relative;
+			}
+
+			.center {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 10%;
+			}
+
+			img { 
+			  width: 10%;
+			  height: auto;
+			  opacity: 1.0;
+			}
+
+			.BottomImage{
+				height: 100px;
+				width: 100px;
+				opacity: 100%;
+			}
+			body {
+			  background-image: url('bg.jpg'); 
+			  background-repeat: no-repeat; 
+			  background-size: cover;
+			}
+			label{
+				color: black;
+			}
+			li{
+				font-weight: bold;
+				opacity: 100%
+			}
+			h5{
+				color: black;
+			}
+			#col1 figure{
+				background-color: white;
+				max-width: 30%;
+
+			}
+            h1{
+                text-align: center;
+            }
+            
+            #col-sm-4,  #col-sm-5, #col-sm-2 {
+                height: auto;
+                margin: 10px;
+            }
+            #img-responsive img{
+                align-items: center;
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+    	<header>
+    		<nav class="navbar navbar-fixed-top" id="top-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" style="font-family:Nova Square" href="#">Campus Recruitment System</a>
+				</div>
+				<ul id="list1" class="nav navbar-nav">
+					<li class="active"><a href="index1.html">Home</a></li>
+					<li class="active"><a href="index1.html">Logout</a></li>
+					<li class="active"><a href="delete_company.php">Delete Account</a></li>
+				</ul>
+			</div>
+		</nav>
+    	</header>
+        <h1>COMPANY DASHBOARD</h1>
+        <div class="container-fluid" id="dash">
+            <div class="row">
+                <div class="col-sm-4">
+                    <br><br>
+                    <?php
+                        $servername="127.0.0.1";
+                        $username="root";
+                        $password="";
+                        $dbname="project";
+                            
+                        $conn = new mysqli($servername,$username,$password,$dbname);
+
+                        if($conn->connect_error){
+                            die("Connection failed: ".$conn->connect_error);
+                        }
+                        $sql="Select * from companys where email=\"".$_GET['email']."\"";
+                        $result = $conn->query($sql);
+                        $row=$result->fetch_assoc();
+                        echo"  
+                            <div class=\"table-responsive table-bordered\" style=\"border-color: black; border-style: all;\" >            
+                                <table class=\"table table-hover\">
+                                    <tr>
+                                        <th>Name</th>
+                                        <td>".$row['name']."</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email</th>
+                                        <td>".$row['email']."</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Contact No.</th>
+                                        <td>".$row['phone']."</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Location</th>
+                                        <td>".$row['location']."</td>
+                                    </tr>
+                                    <tr>
+                                        <th>C.E.O.</th>
+                                        <td>".$row['ceo']."</td>
+                                    </tr>
+                                    <tr>
+                                        <th>C.T.O.</th>
+                                        <td>".$row['cto']."</td>
+                                    </tr>
+                                    <tr>
+                                        <th>H.R.</th>
+                                        <td>".$row['hr']."</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        ";
+			        ?>
+                </div>
+                <div class="col-sm-5">
+                    <h2>DETAILS ABOUT THE STUDENT</h2>
+                    <div class="table-responsive table-bordered" style="border-color: black; border-style: all;">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>Name</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Date of Birth</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Branch</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Year of Passing out</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>CGPA</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>12<sup>th</sup> Percentage</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>10<sup>th</sup> Percentage</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Contact No.</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Course</th>
+                                <td>---</td>
+                            </tr>		  
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                        <input type="checkbox" data-toggle="toggle" data-on="Accepted" data-off="Rejected">
+                    <hr>
+                    <a href="vacancy.html">CREATE VACANCY</a>
+                </div>
+                <div class="col-sm-2">
+                    <h2>NAME OF STUDENTS</h2>
+                    <p>Click For More Details About The Student</p>
+
+                    <?php
+					$servername="127.0.0.1";
+					$username="root";
+					$password="";
+					$dbname="project";
+					
+					$conn = new mysqli($severname,$username,$password,$dbname);
+					
+					if($conn->connect_error){
+						die("Connection failed: ".$conn->connect_error);
+					}
+					$sql="Select name from students";
+					$result=$conn->query($sql);
+							
+					echo"
+						<div class=\"table-responsive \" >            
+							<table class=\"table table-hover\">
+								<thead>
+									<tr>
+										<th>Name of students</th>
+									</tr>
+								</thead>
+							<tbody>";
+						
+						while($row=$result->fetch_assoc()){
+						echo "<tr>";
+						echo "<td>".$row['name']."</td>";
+						echo "</tr>";
+						}
+						echo"</tbody>
+						</table>
+						</div>
+					";    
+				?>
+                </div>
+            </div>
+        </div>
+        <footer>
+		<nav class="navbar navbar-footer" id="bottom-nav">
+			<div class="container-fluid">
+				<div id="col2" >
+					<ul id="blist1">
+						<li><a href='#'>About Us</a></li>
+						<li><a href='#'>FAQs</a></li>
+						<li><a href='#'>Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div id="col3" >
+					<ul id="blist1">
+						<li><a href='#'>Privacy Policy</a></li>
+						<li><a href='#'>Legal</a></li>
+						<li><a href='#'>Work With Us</a></li>
+					</ul>
+				</div>
+				
+				<div id="col4" class=" container-fluid">
+				
+					<ul id="blist3" >
+						<li><i class="fa fa-facebook fa-2x" ><a href='#'></a></i></li>
+						<li><i class="fa fa-twitter fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-instagram fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-linkedin fa-2x"><a href='#'></a></i></li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+	</footer>
+    </body>
+    
+</html>
