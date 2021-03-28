@@ -1,43 +1,39 @@
 # SVKM'S MPSTME NMIMS SHIRPUR CAMPUS 
+### Computer Science Department ###
+### COLLEGE RECRUITMENT MANAGEMENT SYSTEM ###
 
-# Computer Science Department
+## SUBMITTED BY ##
+  1. ADITYA KHARE
+  2. SAMKIT SARAF
+  3. YASH MEHTA
+  4. OMKAR SANWATSARKAR
 
-# CAMPUS RECRUITMENT MANAGEMENT SYSTEM
+- B. TECH CSE 3rd YEAR 2020-2021 SEMESTER 5
 
-##### SUBMITTED BY
+- - - - 
 
-##### SAMKIT SARAF  70021118045  B242
+## SUBMITTED TO ##
+- Prof. Sonali Borase (Course Theory Instructor)
+- Prof. Dhananjay Joshi (Course Lab Instructor)
 
-##### ADITYA KHARE  7002118067 B258
+- - - -
 
-##### YASH MEHTA  7002118071 B262
+## ABOUT THE PROJECT ##
 
-##### OMKAR SANWATSARKAR  70021117040 B269
-
-##### (B. TECH CSE 3rd YEAR 2020-2021 SEMESTER 5)
-
-##### - SUBMITTED TO-
-##### - Prof. Sonali Borase (Course Theory Instructor)
-##### - Prof. Dhananjay Joshi (Course Lab Instructor)
-
-
-
-### ABOUT THE PROJECT
-
-The project named “Campus Recruitment Management System”, is a
+- The project named “Campus Recruitment Management System”, is a
 student/company information system which is a web-based system. 
 The project is developed for Placement cell being presently used in University
 for storing and retrieving the information of students who are registered in
 Placement Cell. 
 
-The Placement Cell maintains a large database of students
+- The Placement Cell maintains a large database of students
 wherein all the information of students including personal records and the
 academic performance in terms C.G.P.A. is stored and company information
 including profile of company, eligibility criteria and facilities it provides
 etc. The software retrieves this data and displays as per the user
 requirement.
 
-The Placement Management System is developed as an attempt to take
+- The Placement Management System is developed as an attempt to take
 a record of company and students by restricting such a large database to that
 of a particular class of students or company. The system provides the
 facility of viewing both the personal and academic information of the
@@ -45,7 +41,7 @@ student and company. Company can post vacancy and students can apply if
 they are eligible. Company can view the applications and can accept or
 reject them.
 
-The project is to facilitate students in college, company to register and
+- The project is to facilitate students in college, company to register and
 communicate with Placement Cell. The users access easily to this and the
 data can be retrieved easily in no time. In the main page there are options
 for Student/Company/Admin login and for registration of new students and
@@ -62,18 +58,10 @@ placed students, job profiles etc. and can delete the records as well.
 
 
 
-# SPECIFICATIONS
+## SPECIFICATIONS ##
 
-#### Technologies Used:
-
-#### Front-End: HTML, CSS, JavaScript
-
-#### Back-End: PHP
-
-#### Database: MySQL
-
-#### Software Stack: XAMPP
-
-
-
-
+### Technologies Used: ###
+  - ### Front-End: HTML, CSS, JavaScript ###
+  - ### Back-End: PHP ###
+  - ### Database: MySQL ###
+  - ### Software Stack: XAMPP ###
