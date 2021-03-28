@@ -1,6 +1,8 @@
-# SVKM'S MPSTME NMIMS SHIRPUR CAMPUS 
+# COLLEGE RECRUITMENT MANAGEMENT SYSTEM
+### SVKM'S MPSTME NMIMS SHIRPUR CAMPUS  ###
 ### Computer Science Department ###
-### COLLEGE RECRUITMENT MANAGEMENT SYSTEM ###
+
+- - - -
 
 ## SUBMITTED BY ##
   1. ADITYA KHARE
@@ -56,7 +58,7 @@ and thus they can accept or reject their application. The administrator can
 execute different queries like details of registered students and companies,
 placed students, job profiles etc. and can delete the records as well.
 
-
+- - - -
 
 ## SPECIFICATIONS ##
 
@@ -65,3 +67,5 @@ placed students, job profiles etc. and can delete the records as well.
   - ### Back-End: PHP ###
   - ### Database: MySQL ###
   - ### Software Stack: XAMPP ###
+
+- - - -
